@@ -25,4 +25,20 @@ This is a github tutorial.
 	输入： git add . ，git会把改动放入stage区域， 再次输入git status，会显示还没有commit
 	输入： git commit , git会把改动放入本地版本控制系统
 
-6.
+6. 创建github远程仓库
+
+	1）注册
+	2）本地生成SSH key
+		生成SSH Key：ssh-keygen –t rsa –C "你的邮箱@xx.com"
+		生成Key时弹出选项，回车选择默认即可。
+		Key保存位置：/root/.ssh
+		登陆GitHub，创建new SSH key，其内容为/root/.ssh/id_rsa.pub中文本
+	3）创建github repo， 复制url
+
+7. 将本地repo push到github
+
+	1）关联本地仓库和GitHub库：git remote add origin 网站上的仓库地址
+	第一次将本地仓库推送到GitHub上：git push –u origin master
+
+	2）本地库的改动提交到远程库：git push origin master
+	更新本地库至远程库的最新改动：git pull
