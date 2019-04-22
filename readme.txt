@@ -25,4 +25,4 @@ This is a github tutorial.
 	输入： git add . ，git会把改动放入stage区域， 再次输入git status，会显示还没有commit
 	输入： git commit , git会把改动放入本地版本控制系统
 
-6. 
+6. xxx
